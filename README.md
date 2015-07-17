@@ -1,12 +1,14 @@
 # TrimGalore
 
-http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/
-
 Description
 ===========
+
+
 A wrapper tool around Cutadapt and FastQC to consistently apply quality and 
 adapter trimming to FastQ files, with some extra functionality for 
 MspI-digested RRBS-type (Reduced Representation Bisufite-Seq) libraries.
+
+http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/
 
 Requirements
 ============
@@ -22,7 +24,25 @@ Notes
 
 Usage
 =====
+Simply include the recipe wherever you would like it installed, such as a run list (recipe[TrimGalore]) or a cookbook (include_recipe 'TrimGalore')
 
+
+## Testing
+To test the recipe we use chef test kitchen:
+
+kitchen converge default-centos65 
+
+kitchen login default-centos65
+
+kitchen verify default-centos65
+
+kitchen destroy default-centos65
+
+Attributes
+==========
+See attributes/default.rb for default values.
+
+default['TrimGalore']['version']
 
 License and Authors
 ===================
