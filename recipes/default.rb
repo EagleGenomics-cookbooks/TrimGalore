@@ -6,8 +6,8 @@
 ##########################################################
 
 include_recipe 'build-essential'
-include_recipe 'FastQC'
 include_recipe 'cutadapt'
+include_recipe 'FastQC'
 
 ##########################################################
 # here for use by serverspec
