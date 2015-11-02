@@ -25,7 +25,7 @@ describe command('which trim_galore') do
   its(:exit_status) { should eq 0 }
 end
 
-version_edited = ENV['TRIM_GALORE_VERSION'].replaceAll('v', '')
+version_edited = ENV['TRIM_GALORE_VERSION'].delete('v')
 
 describe command('trim_galore -version') do
   its(:exit_status) { should eq 0 }
