@@ -4,7 +4,7 @@ maintainer_email 'chef@eaglegenomics.com'
 license 'all_rights'
 description 'Installs/Configures TrimGalore'
 long_description 'Installs/Configures TrimGalore'
-version '1.0.1'
+version '1.0.2'
 
 depends 'build-essential'
 depends 'magic_shell'
