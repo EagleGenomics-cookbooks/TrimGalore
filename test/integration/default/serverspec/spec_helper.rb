@@ -1,3 +1,3 @@
-set :pre_command, 'source /etc/profile'
+set :shell, '/bin/bash'
 
 set :path, '/usr/local/bin/:$PATH'
