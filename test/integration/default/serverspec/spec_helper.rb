@@ -1,3 +1,3 @@
-#set :shell, '/bin/bash'
+# set :shell, '/bin/bash'
 
-#set :path, '/usr/local/bin/:$PATH'
+# set :path, '/usr/local/bin/:$PATH'
